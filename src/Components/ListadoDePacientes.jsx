@@ -1,7 +1,7 @@
 import React from "react";
 import { Paciente } from "./Paciente";
 
-const ListadoDePacientes = ({ pacientes, setPaciente, paciente }) => {
+const ListadoDePacientes = ({ pacientes, setPaciente, paciente, eliminarPaciente }) => {
   
 
 
@@ -24,6 +24,7 @@ const ListadoDePacientes = ({ pacientes, setPaciente, paciente }) => {
            key={paciente.id} 
            paciente = {paciente}
            setPaciente = {setPaciente}
+           eliminarPaciente = {eliminarPaciente}
            />
          ))}
        </div>
